@@ -9,9 +9,6 @@ function App() {
   const [handle, setHandle] = useState("");
   const [data, setData] = useState(null);
 
-  const handleToggleShowUser = (): void => {
-    setShowUser(!showUser);
-  };
 
   const handleSearchInput = (input: string): void => {
     setHandle(input);

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root{
+  --main-font: "Source Code Pro", monospace;
+  --title-font: "Press Start 2P", system-ui;
+
+  /* Dark Theme */
+  --text-dark: #DFEFFB;
+  --bg-dark: #040D1B;
+  --pri-dark: #81BBEE;
+  --sec-dark: #94141F;
+  --accent-dark: #E2B82C;
+
+  /* Light Theme */
+  --text-light: #041420;
+  --bg-light: #E4EDFB;
+  --pri-light: #114B7E ;
+  --sec-light: #EB6B76 ;
+  --accent-light: #D3A81D;
+}
+
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-weight: 400
+}
+
+h1{
+  font-family: var(--title-font);
+}
+

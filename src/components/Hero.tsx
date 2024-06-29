@@ -15,8 +15,16 @@ const Hero = (props: HeroProps) => {
         CodeForcesStats
       </h1>
       <div className="flex justify-center items-center">
-        <SearchInput handle={props.handle} setHandle={props.setHandle} handleSearchInput={props.handleSearchInput} />
-        <SearchButton handle={props.handle} setHandle={props.setHandle} handleSearchInput={props.handleSearchInput} />
+        <SearchInput
+          handle={props.handle}
+          setHandle={props.setHandle}
+          handleSearchInput={props.handleSearchInput}
+        />
+        <SearchButton
+          handle={props.handle}
+          setHandle={props.setHandle}
+          handleSearchInput={props.handleSearchInput}
+        />
       </div>
     </main>
   );

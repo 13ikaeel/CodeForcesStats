@@ -1,5 +1,3 @@
-
-
 type UserDetails = {
   handle: string;
   country: string;
@@ -15,9 +13,9 @@ type UserDetails = {
 type UserInfoProps = {
   data: UserDetails | null;
   showUser: boolean;
-	setShowUser: React.Dispatch<React.SetStateAction<boolean>>;
-	setHandle: React.Dispatch<React.SetStateAction<string>>;
-	handle: string;
+  setShowUser: React.Dispatch<React.SetStateAction<boolean>>;
+  setHandle: React.Dispatch<React.SetStateAction<string>>;
+  handle: string;
 };
 
 const UserInfo = (props: UserInfoProps) => {
@@ -39,11 +37,10 @@ const UserInfo = (props: UserInfoProps) => {
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 bg-black backdrop-blur-sm bg-opacity-50">
       <div className="relative bg-pri rounded-lg p-10 shadow-lg grid gap-6 md:grid-cols-2">
         <i
-          onClick={()=>{
-						props.setShowUser(false)
-						props.setHandle('')
-						}
-					}
+          onClick={() => {
+            props.setShowUser(false);
+            props.setHandle("");
+          }}
           className="fa-solid fa-xmark absolute top-2 right-2 cursor-pointer fill-current text-bg-pri text-3xl py-1 px-3 shadow-inner rounded-full"
         ></i>
 
@@ -70,7 +67,9 @@ const UserInfo = (props: UserInfoProps) => {
             <div className="font-semibold">Last Online Time:</div>
             <div>{new Date(lastOnlineTimeSeconds * 1000).toLocaleString()}</div>
             <div className="font-semibold">Registration Time:</div>
-            <div>{new Date(registrationTimeSeconds * 1000).toLocaleString()}</div>
+            <div>
+              {new Date(registrationTimeSeconds * 1000).toLocaleString()}
+            </div>
           </div>
         </div>
       </div>

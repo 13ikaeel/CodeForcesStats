@@ -1,11 +1,11 @@
-import React from "react";
-import SearchButton from "./SearchButton";
-import SearchInput from "./SearchInput";
+import React from 'react';
+import SearchButton from './SearchButton';
+import SearchInput from './SearchInput';
 
 type HeroProps = {
   handle: string;
   setHandle: React.Dispatch<React.SetStateAction<string>>;
-  handleSearchInput: (input: string) => void;
+  setShowUser:  React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 const Hero = (props: HeroProps) => {
@@ -18,12 +18,13 @@ const Hero = (props: HeroProps) => {
         <SearchInput
           handle={props.handle}
           setHandle={props.setHandle}
-          handleSearchInput={props.handleSearchInput}
+          setShowUser= {props.setShowUser}
         />
         <SearchButton
           handle={props.handle}
           setHandle={props.setHandle}
-          handleSearchInput={props.handleSearchInput}
+          setShowUser= {props.setShowUser}
+
         />
       </div>
     </main>

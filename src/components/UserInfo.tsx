@@ -1,3 +1,5 @@
+import React from 'react';
+
 type UserDetails = {
   handle: string;
   country: string;
@@ -39,7 +41,7 @@ const UserInfo = (props: UserInfoProps) => {
         <i
           onClick={() => {
             props.setShowUser(false);
-            props.setHandle("");
+            props.setHandle('');
           }}
           className="fa-solid fa-xmark absolute top-2 right-2 cursor-pointer fill-current text-bg-pri text-3xl py-1 px-3 shadow-inner rounded-full"
         ></i>

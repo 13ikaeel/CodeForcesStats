@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 type SearchInputProps = {
   handle: string;
   setHandle: React.Dispatch<React.SetStateAction<string>>;
-  handleSearchInput: (input: string) => void;
+  setShowUser:  React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 const SearchInput = (props: SearchInputProps) => {
